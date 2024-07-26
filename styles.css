@@ -70,6 +70,7 @@ h1 {
 .balance {
   font-size: 36px;
   font-weight: 600;
+  overflow: scroll;
 }
 
 .income-expense {
@@ -94,6 +95,7 @@ h1 {
 .card .amount {
   font-size: 24px;
   font-weight: 600;
+  overflow: scroll;
 }
 
 .income .amount {
