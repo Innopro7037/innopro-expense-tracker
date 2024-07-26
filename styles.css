@@ -172,7 +172,6 @@ h1 {
   background-color: var(--light-color);
   border-radius: 15px;
   padding: 20px;
-  overflow: scroll;
 }
 
 .transaction-list-container h3 {
@@ -183,7 +182,7 @@ h1 {
 .transaction-list {
   list-style-type: none;
   max-height: 300px;
-  overflow-y: auto;
+  overflow: scroll;
 }
 
 .transaction-item {
