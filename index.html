@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glorious Budget Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="/img/linker-logo.png" alt="logo" height="30px" />
+        <h1>Innopro expense tracker</h1>
+      </header>
+      <div class="balance-card">
+        <h2>Total Balance</h2>
+        <div class="balance" id="balance">$0.00</div>
+      </div>
+      <div class="income-expense">
+        <div class="card income">
+          <h3>Income</h3>
+          <div class="amount" id="income">$0.00</div>
+        </div>
+        <div class="card expense">
+          <h3>Expense</h3>
+          <div class="amount" id="expense">$0.00</div>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab active" data-type="income">Income</div>
+        <div class="tab" data-type="expense">Expense</div>
+      </div>
+      <form class="transaction-form">
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <button type="submit" id="addBtn">Add Transaction</button>
+      </form>
+      <div class="transaction-list-container">
+        <h3>Transaction History</h3>
+        <ul class="transaction-list" id="transactionList"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
