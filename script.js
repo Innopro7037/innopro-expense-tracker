@@ -20,9 +20,9 @@ function updateBalance() {
         .filter(transaction => transaction.amount < 0)
         .reduce((acc, transaction) => acc + transaction.amount, 0);
 
-    balanceEl.textContent = `$${total.toFixed(2)}`;
-    incomeEl.textContent = `$${income.toFixed(2)}`;
-    expenseEl.textContent = `$${Math.abs(expense).toFixed(2)}`;
+    balanceEl.textContent = `₦${total.toFixed(2)}`;
+    incomeEl.textContent = `₦${income.toFixed(2)}`;
+    expenseEl.textContent = `₦${Math.abs(expense).toFixed(2)}`;
 }
 
 function addTransactionToDOM(transaction) {
@@ -33,7 +33,7 @@ function addTransactionToDOM(transaction) {
         <div class="transaction-info">
             <span class="description">${transaction.description}</span>
             <span class="amount ${transaction.amount < 0 ? 'expense' : 'income'}">
-                ${sign}$${Math.abs(transaction.amount).toFixed(2)}
+                ${sign}₦${Math.abs(transaction.amount).toFixed(2)}
             </span>
         </div>
         <div class="actions">
