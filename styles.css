@@ -172,6 +172,7 @@ h1 {
   background-color: var(--light-color);
   border-radius: 15px;
   padding: 20px;
+  overflow: scroll;
 }
 
 .transaction-list-container h3 {
